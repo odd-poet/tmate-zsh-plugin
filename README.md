@@ -22,5 +22,10 @@
 - `tm_socket` : (디버그용)
   - 세션에 대한 socket 파일 출력.
 
+## install
+
+```
+git clone git@github.com:odd-poet/tmate-zsh-plugin.git ~/.oh-my-zsh/plugins/tmate
+```
 
 [tmate]:https://tmate.io/
