@@ -1,5 +1,7 @@
 # tmate plugin
 
+tmate [oh-my-zsh] plugin.
+
 [tmate]는 `tmux`를 fork한 툴로 `tmux` 세션 공유를 쉽게 도와주는 툴이다.
 (`tmux`와 `tmate`는 동시에 설치되어 있어도 무방하단다)
 
@@ -24,8 +26,11 @@
 
 ## install
 
+`oh-my-zsh`과 `tmate`를 설치한 후에 아래와 같이 설치. 
+
 ```
 git clone git@github.com:odd-poet/tmate-zsh-plugin.git ~/.oh-my-zsh/plugins/tmate
 ```
 
 [tmate]:https://tmate.io/
+[oh-my-zsh]:https://github.com/robbyrussell/oh-my-zsh
