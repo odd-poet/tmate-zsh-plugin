@@ -21,17 +21,16 @@ then
   function tm() {
     local session=$1
     if [[ "$session" == "" ]];then 
-      pritn "usage: tm session_name"
+      print "usage: tm session_name"
       print "  (create and attach session)"
       return 1
     fi
     local socket_file=$(tm_socket $session)
-    if [ ! -S $sokect_file ];then
-      tmnew $session
-      print "created session: $session"
+    if [ -S $sokect_file ];then
+      tma $session
+      else
+      tmnew $session;tma $session
     fi
-    sleep 1
-    tma $session
   }
 
   # create session
