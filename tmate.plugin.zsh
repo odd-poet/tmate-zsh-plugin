@@ -159,6 +159,7 @@ then
     _arguments "1: :($(tmls))"
   }
 
+  compdef _tm_list_session tm
   compdef _tm_list_session tma
   compdef _tm_list_session tmkill
   compdef _tm_list_session tmshare
