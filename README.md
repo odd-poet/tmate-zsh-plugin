@@ -12,7 +12,7 @@ tmate [oh-my-zsh] plugin.
 (`tmate`는 하나의 *socket*에 다수의 *session*을 생성하는 것을 지원하지 않는다.)
 
 - `tm`
-  - 세션 생성 및 attch
+  - 세션 생성 및 attach
 - `tmnew`
   - 세션 생성
 - `tma`

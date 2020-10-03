@@ -16,22 +16,22 @@ then
   function tm_socket() {
     echo $SOCKET_PATH/$1
   }
-
   # create and attach
   function tm() {
     local session=$1
-    if [[ "$session" == "" ]];then 
+    if [[ "$session" == "" ]];then
       print "usage: tm session_name"
       print "  (create and attach session)"
       return 1
     fi
     local socket_file=$(tm_socket $session)
-    if [ -S $sokect_file ];then
+    if [ -S $socket_file ];then
       tma $session
-      else
+    else
       tmnew $session;tma $session
     fi
   }
+
 
   # create session
   function tmnew() {
@@ -138,7 +138,7 @@ then
 		print ""
 		print "Commands:"
     print "  tm SESSION"
-    print "      create or attach session"
+    print "      create and attach session"
 	  print "  tmnew SESSION"
 		print "      create session"
 		print "  tma SESSION"
