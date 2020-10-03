@@ -26,8 +26,9 @@ then
       return 1
     fi
     local socket_file=$(tm_socket $session)
-    if [ ! -f $sokect_file ];then
+    if [ ! -S $sokect_file ];then
       tmnew $session
+      print "created session: $session"
     fi
     tma $session
   }
