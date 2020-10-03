@@ -11,6 +11,8 @@ tmate [oh-my-zsh] plugin.
 이 플러그인은 session 이름으로 socketfile을 생성하고 관리해주며 session에 대한 자동완성을 지원한다.
 (`tmate`는 하나의 *socket*에 다수의 *session*을 생성하는 것을 지원하지 않는다.)
 
+- `tm`
+  - 세션 생성 및 attch
 - `tmnew`
   - 세션 생성
 - `tma`
@@ -41,11 +43,15 @@ git clone git@github.com:odd-poet/tmate-zsh-plugin.git ~/.oh-my-zsh/plugins/tmat
 plugins=(...중략... tmate)
 ```
 
+
 기본 `.tmux.conf`파일도 동봉되어 있으니 홈 디렉토리로 복사해서 사용할 수 있다. 
 
 ```zsh
 cp ~/.oh-my-zsh/plugins/tmate/.tmux.conf ~/.tmux.conf
 ```
+
+[tmate]는 **tmux**의 fork이니 session 내에서의 단축키는 tmux의 것들을 참고하자. 
+- [tmux 입문자 시리즈 요약](https://edykim.com/ko/post/tmux-introductory-series-summary/)
 
 [tmate]:https://tmate.io/
 [oh-my-zsh]:https://github.com/robbyrussell/oh-my-zsh
