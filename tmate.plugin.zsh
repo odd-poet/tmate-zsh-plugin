@@ -30,6 +30,7 @@ then
       tmnew $session
       print "created session: $session"
     fi
+    sleep 1
     tma $session
   }
 
