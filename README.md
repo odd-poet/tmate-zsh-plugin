@@ -23,13 +23,28 @@ tmate [oh-my-zsh] plugin.
   - 세션 공유에 필요한 접속정보를 출력한다.
 - `tm_socket` : (디버그용)
   - 세션에 대한 socket 파일 출력.
+- `tmhelp` 
+  - 도움말 
 
 ## install
 
 `oh-my-zsh`과 `tmate`를 설치한 후에 아래와 같이 설치. 
 
-```
+```bash
 git clone git@github.com:odd-poet/tmate-zsh-plugin.git ~/.oh-my-zsh/plugins/tmate
+```
+
+그리고 `~/.zshrc`에 plugin을 추가해준다. 
+
+```zsh
+# ~/.zshrc의 plugin 설정부분
+plugins=(...중략... tmate)
+```
+
+기본 `.tmux.conf`파일도 동봉되어 있으니 홈 디렉토리로 복사해서 사용할 수 있다. 
+
+```zsh
+cp ~/.oh-my-zsh/plugins/tmate/.tmux.conf ~/.tmux.conf
 ```
 
 [tmate]:https://tmate.io/

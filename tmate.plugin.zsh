@@ -117,6 +117,26 @@ then
 
   }
 
+  function tmhelp() {
+		print "tmate oh-my-zsh plugin (author: oddpoet@gmail.com)"
+		print ""
+		print "Commands:"
+	  print "  tmnew SESSION"
+		print "      create session"
+		print "  tma SESSION"
+		print "      attach session"
+		print "  tmkill SESSION"
+		print "      kill session"
+		print "  tmls"
+		print "      list all sessions"
+		print "  tmshare [SESSION]"
+		print "      print connection info for given session or current session"
+    print "  tm_socket SESSION"
+		print "      print socket file"
+		print "  tmhelp"
+		print "      show help"
+	}
+
   function _tm_list_session() {
     _arguments "1: :($(tmls))"
   }
